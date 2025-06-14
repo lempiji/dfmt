@@ -23,6 +23,11 @@ when using the **--inplace** option.
 ### Building from source using dub
 * Clone the repository
 * run `dub build --build=release`, optionally with `--compiler=ldc2`
+* ensure `rdmd` is in your `PATH` (it comes with DMD/ldc via the official
+  `install.sh` script)
+  
+The first run will build a small helper tool via `rdmd`. Subsequent
+invocations reuse the cached binary and are noticeably faster.
 
 ## Using
 By default, dfmt reads its input from **stdin** and writes to **stdout**.
