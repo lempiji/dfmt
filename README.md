@@ -10,8 +10,12 @@ when using the **--inplace** option.
 
 ### Installing with DUB
 
+Add the repository to your local DUB registry so subsequent runs
+won't have to build the `dubhash` helper again:
+
 ```sh
-> dub run dfmt -- -h
+dub add-local .
+dub run dfmt -- -h
 ```
 
 ### Building from source using Make
