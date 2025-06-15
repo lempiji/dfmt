@@ -15,6 +15,6 @@
         "built_with_dub"
     ],
     "preBuildCommands" : [
-      "$DC -run \"$PACKAGE_DIR/dubhash.d\""
+      "rdmd --compiler=$DC \"$PACKAGE_DIR/dubhash.d\""
     ]
 }
